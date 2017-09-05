@@ -1,10 +1,10 @@
-"----------------------------Custom visual settings
+"----------------------------Styles
 " Scheme
 colorscheme monokai
 
 " Matching Parentheses
 hi MatchParen cterm=bold ctermbg=239 ctermfg=none
-
+"----------------------------Custom visual settings
 " Syntax
 set autoindent
 syntax enable
@@ -44,3 +44,9 @@ filetype plugin indent on
 " NERDTree
 autocmd vimenter * NERDTree
 autocmd VimEnter * wincmd p	" Jump to the main window.
+
+" Quicker window movement
+" nnoremap <C-j> <C-w>j
+" nnoremap <C-k> <C-w>k
+" nnoremap <C-h> <C-w>h
+" nnoremap <C-l> <C-w>l
