@@ -22,6 +22,3 @@ cmuunix='aswang@unix.andrew.cmu.edu'
 cmushark='aswang@shark.ics.cs.cmu.edu'
 
 #--------------------Inital Commands
-if [ -x "$(command -v tmux)" ]; then
-	tmux
-fi

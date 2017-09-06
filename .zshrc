@@ -122,6 +122,3 @@ export PATH=/usr/local/Cellar/pyenv-virtualenv/1.0.0/shims:/Users/austinspwang/.
 export PATH=/usr/local/Cellar/pyenv-virtualenv/1.0.0/shims:/Users/austinspwang/.pyenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/austinspwang/.vimpkg/bin:/Users/austinspwang/.vimpkg/bin
 
 #--------------------Inital Commands
-if [ -x "$(command -v tmux)" ]; then
-	tmux
-fi
