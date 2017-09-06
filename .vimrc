@@ -22,6 +22,12 @@ set breakindent
 set linebreak
 set showbreak=\
 
+" Tabs
+set tabstop=4
+set shiftwidth=4
+set shiftround
+"set expandtab
+
 "----------------------------Custom control settings
 " Inverted T direction keys
 map i <Up>
@@ -50,7 +56,8 @@ nmap <C-i> <C-w><Up>
 nmap <C-j> <C-w><Left>
 nmap <C-k> <C-w><Down>
 nmap <C-l> <C-w><Right>
-nmap <C-q> <C-w>q
+"nmap <C-q> <C-w>q
+"nmap <C-q> :q<CR>
 
 " Split window vertically
 nmap <leader>v <C-w>v<C-w>l
