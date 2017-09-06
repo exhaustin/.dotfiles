@@ -41,9 +41,6 @@ set shiftround
 "set expandtab
 
 "----------------------------Custom control settings
-" Unmap NERDTree bindings
-nunmap i
-
 " Inverted T direction keys
 map i <Up>
 map j <Left>
