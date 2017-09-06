@@ -7,7 +7,6 @@ eval "$(thefuck --alias)"
 
 #-------------Aliases
 # I am a fucking lazy person
-alias fk="fuck"
 alias f="open"
 alias fap="f -a"
 alias psgrep="ps aux | grep"
@@ -20,7 +19,13 @@ alias vimconfig="vim ~/.vimrc"
 alias gitconfig="vim ~/.gitconfig"
 
 # Utilities
-alias flac2mp3="for i in *.flac ;\ do\ ffmpeg -i "$i" -acodec libmp3lame -ab 320k $(basename "${i/.flac}").mp3\ sleep 60\ done"
+if [ -x "$(command -v fuck)" ]; then
+	alias fk="fuck"
+fi
+
+if [ -x "$(command -v ffmpeg)" ]; then
+	alias flac2mp3="for i in *.flac ;\ do\ ffmpeg -i "$i" -acodec libmp3lame -ab 320k $(basename "${i/.flac}").mp3\ sleep 60\ done"
+fi
 
 #--------------------Variables
 cmuunix='aswang@unix.andrew.cmu.edu'
@@ -115,3 +120,8 @@ source $ZSH/oh-my-zsh.sh
 export PATH=/usr/local/Cellar/pyenv-virtualenv/1.0.0/shims:/Users/austinspwang/.pyenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/austinspwang/.vimpkg/bin
 
 export PATH=/usr/local/Cellar/pyenv-virtualenv/1.0.0/shims:/Users/austinspwang/.pyenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/austinspwang/.vimpkg/bin:/Users/austinspwang/.vimpkg/bin
+
+#--------------------Inital Commands
+if [ -x "$(command -v tmux)" ]; then
+	tmux
+fi
