@@ -46,7 +46,14 @@ autocmd vimenter * NERDTree
 autocmd VimEnter * wincmd p	" Jump to the main window.
 
 " Quicker window movement
-" nnoremap <C-j> <C-w>j
-" nnoremap <C-k> <C-w>k
-" nnoremap <C-h> <C-w>h
-" nnoremap <C-l> <C-w>l
+nmap <C-i> <C-w><Up>
+nmap <C-j> <C-w><Left>
+nmap <C-k> <C-w><Down>
+nmap <C-l> <C-w><Right>
+nmap <C-q> <C-w>q
+
+" Split window vertically
+nmap <leader>v <C-w>v<C-w>l
+
+" Split window horizontally
+nmap <leader>s <C-w>s<C-w>j

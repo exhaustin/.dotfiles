@@ -11,7 +11,7 @@ alias fk="fuck"
 alias f="open"
 alias fap="f -a"
 alias psgrep="ps aux | grep"
-alias lash="ls -lash"
+alias l="ls -lah"
 
 # Configs
 alias zshconfig="vim ~/.zshrc"
