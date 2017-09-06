@@ -7,10 +7,11 @@ PS1='\w\$ '
 alias f="open"
 alias fap="f -a"
 alias psgrep="ps aux | grep"
-alias l="ls -lah"
+alias l="ls -lh"
+alias la="ls -lah"
 
 # Configs
-alias zshconfig="vim ~/.zshrc"
+alias bashconfig="vim ~/.bashrc"
 alias vimconfig="vim ~/.vimrc"
 alias gitconfig="vim ~/.gitconfig"
 
