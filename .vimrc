@@ -1,9 +1,19 @@
+"----------------------------Plugin configs
+execute pathogen#infect('~/.vim/bundle/{}')
+syntax on
+filetype plugin indent on
+
+" NERDTree
+autocmd vimenter * NERDTree
+autocmd VimEnter * wincmd p	" Jump to the main window.
+
 "----------------------------Styles
 " Scheme
 colorscheme monokai
 
 " Matching Parentheses
-hi MatchParen cterm=bold ctermbg=239 ctermfg=none
+hi MatchParen cterm=bold ctermbg=242 ctermfg=none
+
 "----------------------------Custom visual settings
 " Syntax
 set autoindent
@@ -41,15 +51,6 @@ noremap I H
 
 " Fuck touchbar
 imap ` <Esc>
-
-"----------------------------Plugin configs
-execute pathogen#infect('~/.vim/bundle/{}')
-syntax on
-filetype plugin indent on
-
-" NERDTree
-autocmd vimenter * NERDTree
-autocmd VimEnter * wincmd p	" Jump to the main window.
 
 " Quicker window movement
 nmap <C-i> <C-w><Up>
