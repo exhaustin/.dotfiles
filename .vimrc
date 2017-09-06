@@ -16,8 +16,9 @@ hi MatchParen cterm=bold ctermbg=242 ctermfg=none
 
 "----------------------------Custom visual settings
 " Syntax
-set autoindent
-syntax enable
+if !exists("g:syntax_on")
+	syntax enable
+endif
 
 " Numbers
 set number
@@ -33,6 +34,7 @@ set linebreak
 set showbreak=\
 
 " Tabs
+set autoindent
 set tabstop=4
 set shiftwidth=4
 set shiftround
