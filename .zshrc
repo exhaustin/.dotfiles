@@ -25,8 +25,6 @@ alias flac2mp3="for i in *.flac ;\ do\ ffmpeg -i "$i" -acodec libmp3lame -ab 320
 cmuunix='aswang@unix.andrew.cmu.edu'
 cmushark='aswang@shark.ics.cs.cmu.edu'
 
-
-
 #--------------------
 
 # Path to your oh-my-zsh installation.
