@@ -40,6 +40,9 @@ set shiftwidth=4
 set shiftround
 "set expandtab
 
+" Super Retab
+:command! -nargs=1 -range SuperRetab <line1>,<line2>s/\v%(^ *)@<= {<args>}/\t/g
+
 "----------------------------Custom control settings
 " Inverted T direction keys
 map i <Up>
@@ -54,7 +57,7 @@ noremap I H
 " Fuck touchbar
 imap ` <Esc>
 
-" Quicker window movement
+" NERDTree window movement
 nmap <C-i> <C-w><Up>
 nmap <C-j> <C-w><Left>
 nmap <C-k> <C-w><Down>
