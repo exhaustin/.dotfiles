@@ -12,7 +12,7 @@ autocmd VimEnter * wincmd p	" Jump to the main window.
 colorscheme monokai
 
 " Matching Parentheses
-hi MatchParen cterm=bold ctermbg=242 ctermfg=none
+hi MatchParen cterm=bold ctermbg=239 ctermfg=none
 
 "----------------------------Custom visual settings
 " Syntax
