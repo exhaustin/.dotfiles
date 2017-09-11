@@ -17,6 +17,7 @@ alias la="ls -lah"
 alias zshconfig="vim ~/.zshrc"
 alias vimconfig="vim ~/.vimrc"
 alias gitconfig="vim ~/.gitconfig"
+alias tmuxconfig="vim ~/.tmux.conf"
 
 # Utilities
 if [ -x "$(command -v fuck)" ]; then
