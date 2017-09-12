@@ -29,7 +29,6 @@ set showcmd
 set ruler
 
 " Line breaks
-set breakindent
 set linebreak
 set showbreak=\
 
