@@ -4,8 +4,11 @@ syntax on
 filetype plugin indent on
 
 " NERDTree
-autocmd vimenter * NERDTree
-autocmd VimEnter * wincmd p	" Jump to the main window.
+map <C-n> :NERDTreeToggle<CR>
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+"autocmd vimenter * NERDTree
+"autocmd VimEnter * wincmd p	" Jump to the main window.
 
 "----------------------------Styles
 " Scheme
