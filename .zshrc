@@ -8,6 +8,7 @@ eval "$(thefuck --alias)"
 #-------------Aliases
 # I am a fucking lazy person
 alias f="open"
+alias f.="f ."
 alias fap="f -a"
 alias psgrep="ps aux | grep"
 alias ll="ls -lh"
@@ -31,6 +32,7 @@ fi
 #--------------------Variables
 cmuunix='aswang@unix.andrew.cmu.edu'
 cmushark='aswang@shark.ics.cs.cmu.edu'
+mcrl='/Users/austinspwang/Projects/CMU/openai_gym/gym/gym/envs/cmu_biorobotics'
 
 #--------------------
 
