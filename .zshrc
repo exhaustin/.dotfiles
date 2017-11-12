@@ -21,6 +21,8 @@ alias gitconfig="vim ~/.gitconfig"
 alias tmuxconfig="vim ~/.tmux.conf"
 
 # Utilities
+alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
+
 if [ -x "$(command -v fuck)" ]; then
 	alias fk="fuck"
 fi
