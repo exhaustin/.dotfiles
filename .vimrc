@@ -57,7 +57,8 @@ noremap H I
 noremap I H
 
 " Fuck touchbar
-imap ` <Esc>
+inoremap ` <Esc>
+inoremap <Esc> `
 
 " NERDTree window movement
 nmap <C-i> <C-w><Up>
