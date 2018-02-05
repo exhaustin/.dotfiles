@@ -7,6 +7,7 @@ syn keyword pythonDefine	class def nextgroup=pythonFunction skipwhite
 "syn match pythonFCallKeyword /\i*\ze\s*=[^=]/ contained
 syn match pythonFName /\w\+\s*(/me=e-1,he=e-1
 
+syn region Comment start=/"""/ end=/"""/
 syn match pythonDecorator "@" display nextgroup=pythonFunction
 
 if version >= 508 || !exists("did_python_syn_inits")
