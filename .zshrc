@@ -12,7 +12,7 @@ alias f.="f ."
 alias fap="f -a"
 alias psgrep="ps aux | grep"
 alias ll="ls -lh"
-alias la="ls -lah"
+alias la="ls -a"
 
 # Configs
 alias zshconfig="vim ~/.zshrc"
