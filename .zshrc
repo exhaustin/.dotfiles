@@ -34,7 +34,7 @@ fi
 #--------------------Variables
 cmuunix='aswang@unix.andrew.cmu.edu'
 cmushark='aswang@shark.ics.cs.cmu.edu'
-iamserver='austinspwang@128.2.176.214'
+iamserver='austinspwang@isaac.ri.cmu.edu'
 
 #--------------------
 
