@@ -21,6 +21,7 @@ alias gitconfig="vim ~/.gitconfig"
 alias tmuxconfig="vim ~/.tmux.conf"
 
 # Utilities
+alias matlab='/Applications/MATLAB_R2017a.app/bin/matlab -nodesktop'
 alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
 
 if [ -x "$(command -v fuck)" ]; then
