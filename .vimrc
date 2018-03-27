@@ -46,6 +46,15 @@ set shiftround
 :command! -nargs=1 -range SuperRetab <line1>,<line2>s/\v%(^ *)@<= {<args>}/\t/g
 
 "----------------------------Custom control settings
+" Mouse
+set mouse=a
+
+" Arrow keys in insert
+imap OA <Up>
+imap OB <Down>
+imap OC <Right>
+imap OD <Left>
+
 " Inverted T direction keys
 map i <Up>
 map j <Left>

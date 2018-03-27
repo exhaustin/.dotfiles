@@ -11,8 +11,11 @@ alias f="open"
 alias f.="f ."
 alias fap="f -a"
 alias psgrep="ps aux | grep"
-alias ll="ls -lh"
-alias la="ls -a"
+
+#alias ls='LC_COLLATE=C ls -h --group-directories-first --color=auto'
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
 
 # Configs
 alias zshconfig="vim ~/.zshrc"
@@ -35,7 +38,7 @@ fi
 #--------------------Variables
 cmuunix='aswang@unix.andrew.cmu.edu'
 cmushark='aswang@shark.ics.cs.cmu.edu'
-isaac='austinspwang@isaac.ri.cmu.edu'
+isaac='aswang@isaac.ri.cmu.edu'
 
 #--------------------
 
