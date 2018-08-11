@@ -82,3 +82,8 @@ nmap <leader>v <C-w>v<C-w>l
 
 " Split window horizontally
 nmap <leader>s <C-w>s<C-w>j
+
+" tell it to use an undo file
+set undofile
+" set a directory to store the undo history
+set undodir=/home/austinspwang/.vimundo/

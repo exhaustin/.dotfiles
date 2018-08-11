@@ -1,4 +1,4 @@
-" Custom python3 definitions.
+" Custom python definitions
 syn keyword pythonSelf  self
 syn keyword pythonNumber  None False True
 syn keyword pythonDefine	class def nextgroup=pythonFunction skipwhite
@@ -10,6 +10,7 @@ syn match pythonFName /\w\+\s*(/me=e-1,he=e-1
 syn region Comment start=/"""/ end=/"""/
 syn match pythonDecorator "@" display nextgroup=pythonFunction
 
+" Custom highlighting
 if version >= 508 || !exists("did_python_syn_inits")
   if version <= 508
     let did_python_syn_inits = 1
@@ -18,14 +19,14 @@ if version >= 508 || !exists("did_python_syn_inits")
     command -nargs=+ HiLink hi def link <args>
   endif
 
-  " Custom highlight links.
+  " Custom highlight links
   HiLink pythonSelf   		pythonSelf
   HiLink pythonNumber	  	Number
   HiLink pythonDefine	  	Define
   HiLink pythonBuiltin		pythonBuiltin
 
-  HiLink pythonFName		pythonFName
-  HiLink pythonFCallKeyword	pythonFCallKeyword
+  HiLink pythonFName		FName
+  HiLink pythonFCallKeyword	FCallKeyword
 
   HiLink pythonDecorator	Define
 

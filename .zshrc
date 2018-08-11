@@ -39,6 +39,7 @@ fi
 cmuunix='aswang@unix.andrew.cmu.edu'
 cmushark='aswang@shark.ics.cs.cmu.edu'
 isaac='aswang@isaac.ri.cmu.edu'
+arthur='aswang@arthur.ri.cmu.edu'
 
 #--------------------
 
