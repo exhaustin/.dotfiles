@@ -40,6 +40,11 @@ cmuunix='aswang@unix.andrew.cmu.edu'
 cmushark='aswang@shark.ics.cs.cmu.edu'
 isaac='aswang@isaac.ri.cmu.edu'
 arthur='aswang@arthur.ri.cmu.edu'
+descartes='aswang@descartes.ri.cmu.edu'
+groot='aswang@iam-groot.ri.cmu.edu'
+drax='aswang@iam-drax.ri.cmu.edu'
+nrec='aswang@deeperthought'
+acsi='instructor@mark1.andrew.cmu.edu'
 
 #--------------------
 
@@ -125,10 +130,5 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-
-export PATH=/usr/local/Cellar/pyenv-virtualenv/1.0.0/shims:/Users/austinspwang/.pyenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/austinspwang/.vimpkg/bin
-
-export PATH=/usr/local/Cellar/pyenv-virtualenv/1.0.0/shims:/Users/austinspwang/.pyenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/austinspwang/.vimpkg/bin:/Users/austinspwang/.vimpkg/bin
-
+#
 #--------------------Inital Commands
