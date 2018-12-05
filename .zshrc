@@ -1,8 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
 eval "$(thefuck --alias)"
 
 #-------------Aliases
@@ -24,7 +22,7 @@ alias gitconfig="vim ~/.gitconfig"
 alias tmuxconfig="vim ~/.tmux.conf"
 
 # Virtualenv
-alias activate='source .env/bin/activate'
+alias activate='source venv/bin/activate'
 
 # Utilities
 alias matlab='/Applications/MATLAB_R2017a.app/bin/matlab -nodesktop'
