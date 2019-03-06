@@ -117,5 +117,8 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# Tmux
+alias tmux='tmux -2'
+
 # Virtualenv
 alias activate='source venv/bin/activate'
