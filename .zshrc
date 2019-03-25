@@ -36,6 +36,12 @@ if [ -x "$(command -v ffmpeg)" ]; then
 	alias flac2mp3="for i in *.flac ;\ do\ ffmpeg -i "$i" -acodec libmp3lame -ab 320k $(basename "${i/.flac}").mp3\ sleep 60\ done"
 fi
 
+# Vim
+alias vu='vim -u "~/.dotfiles/.vimrc"'
+
+# Tmux
+alias tmux='tmux -2'
+
 #--------------------Variables
 cmuunix='aswang@unix.andrew.cmu.edu'
 cmushark='aswang@shark.ics.cs.cmu.edu'

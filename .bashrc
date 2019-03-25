@@ -117,6 +117,9 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# Vim
+alias vu='vim -u "~/.dotfiles/.vimrc"'
+
 # Tmux
 alias tmux='tmux -2'
 
