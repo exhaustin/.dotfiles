@@ -40,7 +40,7 @@ set autoindent
 set tabstop=4
 set shiftwidth=4
 set shiftround
-"set expandtab
+set expandtab
 
 " Super Retab
 :command! -nargs=1 -range SuperRetab <line1>,<line2>s/\v%(^ *)@<= {<args>}/\t/g
