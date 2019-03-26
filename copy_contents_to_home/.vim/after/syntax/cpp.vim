@@ -1,7 +1,6 @@
 " Indentation
 setlocal shiftwidth=2
 setlocal tabstop=2
-setlocal expandtab
 
 " Custom cpp definitions
 syn keyword cppDefine	class def nextgroup=cppFunction skipwhite
