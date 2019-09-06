@@ -1,0 +1,46 @@
+{
+"vim.insertModeKeyBindings": [
+{
+"before": ["", "O", "A"],
+"after": ["<Up>"]
+},
+{
+"before": ["", "O", "B"],
+"after": ["<Down>"]
+},
+{
+"before": ["", "O", "C"],
+"after": ["<Right>"]
+},
+{
+"before": ["", "O", "D"],
+"after": ["<Left>"]
+}
+],
+"vim.normalModeKeyBindings": [
+{
+"before": ["<C-i>"],
+"after": ["<C-w>", "<Up>"]
+},
+{
+"before": ["<C-j>"],
+"after": ["<C-w>", "<Left>"]
+},
+{
+"before": ["<C-k>"],
+"after": ["<C-w>", "<Down>"]
+},
+{
+"before": ["<C-l>"],
+"after": ["<C-w>", "<Right>"]
+},
+{
+"before": ["<leader>", "v"],
+"after": ["<C-w>", "v", "<C-w>", "l"]
+},
+{
+"before": ["<leader>", "s"],
+"after": ["<C-w>", "s", "<C-w>", "j"]
+}
+]
+}
