@@ -1,46 +1,33 @@
 {
-"vim.insertModeKeyBindings": [
-{
-"before": ["", "O", "A"],
-"after": ["<Up>"]
-},
-{
-"before": ["", "O", "B"],
-"after": ["<Down>"]
-},
-{
-"before": ["", "O", "C"],
-"after": ["<Right>"]
-},
-{
-"before": ["", "O", "D"],
-"after": ["<Left>"]
-}
-],
-"vim.normalModeKeyBindings": [
-{
-"before": ["<C-i>"],
-"after": ["<C-w>", "<Up>"]
-},
-{
-"before": ["<C-j>"],
-"after": ["<C-w>", "<Left>"]
-},
-{
-"before": ["<C-k>"],
-"after": ["<C-w>", "<Down>"]
-},
-{
-"before": ["<C-l>"],
-"after": ["<C-w>", "<Right>"]
-},
-{
-"before": ["<leader>", "v"],
-"after": ["<C-w>", "v", "<C-w>", "l"]
-},
-{
-"before": ["<leader>", "s"],
-"after": ["<C-w>", "s", "<C-w>", "j"]
-}
-]
+    "editor.renderWhitespace": "all",
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+        "before": ["i", "k", "j", "l", "h", "H"],
+        "after": ["<Up>", "<Down>", "<Left>", "<Right>", "i", "I"]
+        },
+        {
+        "before": ["i"],
+        "after": ["<Up>"]
+        },
+        {
+        "before": ["k"],
+        "after": ["<Down>"]
+        },
+        {
+        "before": ["j"],
+        "after": ["<Left>"]
+        },
+        {
+        "before": ["l"],
+        "after": ["<Right>"]
+        },
+        {
+        "before": ["h"],
+        "after": ["i"]
+        },
+        {
+        "before": ["H"],
+        "after": ["I"]
+        },
+    ]
 }
