@@ -28,6 +28,36 @@
         {
         "before": ["H"],
         "after": ["I"]
+        }
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+        "before": ["i", "k", "j", "l", "h", "H"],
+        "after": ["<Up>", "<Down>", "<Left>", "<Right>", "i", "I"]
         },
+        {
+        "before": ["i"],
+        "after": ["<Up>"]
+        },
+        {
+        "before": ["k"],
+        "after": ["<Down>"]
+        },
+        {
+        "before": ["j"],
+        "after": ["<Left>"]
+        },
+        {
+        "before": ["l"],
+        "after": ["<Right>"]
+        },
+        {
+        "before": ["h"],
+        "after": ["i"]
+        },
+        {
+        "before": ["H"],
+        "after": ["I"]
+        }
     ]
 }
