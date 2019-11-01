@@ -36,24 +36,19 @@ if [ -x "$(command -v ffmpeg)" ]; then
 	alias flac2mp3="for i in *.flac ;\ do\ ffmpeg -i "$i" -acodec libmp3lame -ab 320k $(basename "${i/.flac}").mp3\ sleep 60\ done"
 fi
 
+#--------------------Variables
+devfair='-J fairjmp.thefacebook.com devfair159'
+#--------------------
+
+# Pdb
+alias pythondb='python -m pdb -c continue'
+alias ipythondb='python -m ipdb -c continue'
+
 # Vim
 alias vu='vim -S ~/.dotfiles/.vimrc'
 
 # Tmux
 alias tmux='tmux -2'
-
-#--------------------Variables
-cmuunix='aswang@unix.andrew.cmu.edu'
-cmushark='aswang@shark.ics.cs.cmu.edu'
-isaac='aswang@isaac.ri.cmu.edu'
-arthur='aswang@arthur.ri.cmu.edu'
-descartes='aswang@descartes.ri.cmu.edu'
-groot='aswang@iam-groot.ri.cmu.edu'
-drax='aswang@iam-drax.ri.cmu.edu'
-nrec='aswang@deeperthought'
-acsi='instructor@mark1.andrew.cmu.edu'
-
-#--------------------
 
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/austinspwang/.oh-my-zsh

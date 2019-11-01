@@ -117,6 +117,14 @@ if ! shopt -oq posix; then
   fi
 fi
 
+#--------------------Variables
+devfair='-J fairjmp.thefacebook.com devfair159'
+#--------------------
+
+# Pdb
+alias pythondb='python -m pdb -c continue'
+alias ipythondb='python -m ipdb -c continue'
+
 # Vim
 alias vu='vim -S ~/.dotfiles/.vimrc'
 
