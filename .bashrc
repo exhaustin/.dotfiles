@@ -133,3 +133,14 @@ alias tmux='tmux -2'
 
 # Virtualenv
 alias activate='source venv/bin/activate'
+
+# Emoji exit code
+EmojiExitCode()  {
+    if [ "$?" == "0" ]; then
+        echo -n "😀";
+    else
+        echo -n "🤬"; # echo -n '😱';
+    fi
+}   
+
+export PS1="\$(EmojiExitCode) $PS1"
