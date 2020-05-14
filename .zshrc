@@ -1,14 +1,11 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-eval "$(thefuck --alias)"
-
 #-------------Aliases
 # I am a fucking lazy person
 alias f="open"
 alias f.="f ."
 alias fap="f -a"
-alias psgrep="ps aux | grep"
 
 #alias ls='LC_COLLATE=C ls -h --group-directories-first --color=auto'
 alias ll='ls -alF'
@@ -49,9 +46,6 @@ alias vu='vim -S ~/.dotfiles/.vimrc'
 
 # Tmux
 alias tmux='tmux -2'
-
-# Path to your oh-my-zsh installation.
-export ZSH=/Users/austinspwang/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -102,7 +96,7 @@ ZSH_THEME="agnoster"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git)
 
-source $ZSH/oh-my-zsh.sh
+#source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
