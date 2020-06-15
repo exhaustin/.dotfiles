@@ -1,48 +1,22 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-eval "$(thefuck --alias)"
+#-------------Prompt
+autoload -Uz promptinit
+promptinit
+prompt fade cyan black magenta
 
 #-------------Aliases
-# I am a fucking lazy person
-alias f="open"
-alias f.="f ."
-alias fap="f -a"
-alias psgrep="ps aux | grep"
-
-#alias ls='LC_COLLATE=C ls -h --group-directories-first --color=auto'
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
-
-# Configs
-alias zshconfig="vim ~/.zshrc"
-alias vimconfig="vim ~/.vimrc"
-alias gitconfig="vim ~/.gitconfig"
-alias tmuxconfig="vim ~/.tmux.conf"
-
-# Virtualenv
-alias activate='source venv/bin/activate'
-
 # Utilities
 alias matlab='/Applications/MATLAB_R2017a.app/bin/matlab -nodesktop'
 alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
-
-if [ -x "$(command -v fuck)" ]; then
-	alias fk="fuck"
-fi
-
-if [ -x "$(command -v ffmpeg)" ]; then
-	alias flac2mp3="for i in *.flac ;\ do\ ffmpeg -i "$i" -acodec libmp3lame -ab 320k $(basename "${i/.flac}").mp3\ sleep 60\ done"
-fi
 
 #--------------------Variables
 devfair='-J fairjmp.thefacebook.com devfair159'
 #--------------------
 
-# Pdb
-alias pythondb='python -m pdb -c continue'
-alias ipythondb='python -m ipdb -c continue'
+# iPdb
+alias pythondb='python -m ipdb -c continue'
 
 # Vim
 alias vu='vim -S ~/.dotfiles/.vimrc'
@@ -51,7 +25,7 @@ alias vu='vim -S ~/.dotfiles/.vimrc'
 alias tmux='tmux -2'
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/austinspwang/.oh-my-zsh
+#export ZSH=/Users/austinspwang/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -100,9 +74,9 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+#plugins=(git)
 
-source $ZSH/oh-my-zsh.sh
+#source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
@@ -134,3 +108,4 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
 #--------------------Inital Commands
+
