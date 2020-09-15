@@ -119,6 +119,7 @@ fi
 
 #--------------------Variables
 devfair='-J fairjmp.thefacebook.com devfair159'
+devserver='devvm1600.atn0.facebook.com'
 #--------------------
 
 # Pdb
