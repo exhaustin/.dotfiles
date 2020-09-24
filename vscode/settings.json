@@ -1,10 +1,7 @@
 {
     "editor.renderWhitespace": "all",
+    "explorer.autoReveal": false,
     "vim.normalModeKeyBindingsNonRecursive": [
-        {
-        "before": ["i", "k", "j", "l", "h", "H"],
-        "after": ["<Up>", "<Down>", "<Left>", "<Right>", "i", "I"]
-        },
         {
         "before": ["i"],
         "after": ["<Up>"]
@@ -31,10 +28,6 @@
         }
     ],
     "vim.visualModeKeyBindingsNonRecursive": [
-        {
-        "before": ["i", "k", "j", "l", "h", "H"],
-        "after": ["<Up>", "<Down>", "<Left>", "<Right>", "i", "I"]
-        },
         {
         "before": ["i"],
         "after": ["<Up>"]
