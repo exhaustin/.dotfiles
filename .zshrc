@@ -7,6 +7,8 @@ alias f="open"
 alias f.="f ."
 alias fap="f -a"
 
+alias sudo="sudo"
+
 #alias ls='LC_COLLATE=C ls -h --group-directories-first --color=auto'
 alias ll='ls -alF'
 alias la='ls -A'
