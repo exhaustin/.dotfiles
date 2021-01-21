@@ -1,7 +1,26 @@
 # ~/.bashrc: executed by bash(1) for non-login shells.
-# see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
-# for examples
 
+#-------------Aliases
+source ~/.dotfiles/.bash_aliases
+
+#-------------Colors & Themes
+# Emoji exit code
+EmojiExitCode()  {
+    if [ "$?" == "0" ]; then
+        echo -n "😀";
+    else
+        echo -n "🤬"; # echo -n '😱';
+    fi
+}   
+
+export PS1="\$(EmojiExitCode) $PS1"
+
+# xterm: set a fancy prompt (non-color, unless we know we "want" color)
+case "$TERM" in
+    xterm-color|*-256color) color_prompt=yes;;
+esac
+
+#-------------Previous bash messy settings
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
@@ -34,11 +53,6 @@ shopt -s checkwinsize
 if [ -z "${debian_chroot:-}" ] && [ -r /etc/debian_chroot ]; then
     debian_chroot=$(cat /etc/debian_chroot)
 fi
-
-# set a fancy prompt (non-color, unless we know we "want" color)
-case "$TERM" in
-    xterm-color|*-256color) color_prompt=yes;;
-esac
 
 # uncomment for a colored prompt, if the terminal has the capability; turned
 # off by default to not distract the user: the focus in a terminal window
@@ -88,11 +102,6 @@ fi
 # colored GCC warnings and errors
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
-# some more ls aliases
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
-
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
@@ -116,32 +125,3 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-
-#--------------------Variables
-devfair='-J fairjmp.thefacebook.com devfair159'
-devserver='devvm1600.atn0.facebook.com'
-#--------------------
-
-# Pdb
-alias pythondb='python -m pdb -c continue'
-alias ipythondb='python -m ipdb -c continue'
-
-# Vim
-alias vu='vim -S ~/.dotfiles/.vimrc'
-
-# Tmux
-alias tmux='tmux -2'
-
-# Virtualenv
-alias activate='source venv/bin/activate'
-
-# Emoji exit code
-EmojiExitCode()  {
-    if [ "$?" == "0" ]; then
-        echo -n "😀";
-    else
-        echo -n "🤬"; # echo -n '😱';
-    fi
-}   
-
-export PS1="\$(EmojiExitCode) $PS1"

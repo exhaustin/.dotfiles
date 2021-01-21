@@ -1,56 +1,27 @@
-# If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
-
-#-------------Aliases
-# I am a fucking lazy person
-alias f="open"
-alias f.="f ."
-alias fap="f -a"
-
-#alias ls='LC_COLLATE=C ls -h --group-directories-first --color=auto'
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
-
-# Configs
-alias zshconfig="vim ~/.zshrc"
-alias vimconfig="vim ~/.vimrc"
-alias gitconfig="vim ~/.gitconfig"
-alias tmuxconfig="vim ~/.tmux.conf"
-
-# iPdb
-alias pythondb='python -m ipdb -c continue'
-
-# Vim
-alias vu='vim -S ~/.dotfiles/.vimrc'
-
-# Tmux
-alias tmux='tmux -2'
-
-# Virtualenv
-alias activate='source venv/bin/activate'
-
-#-------------Prompt
-autoload -Uz promptinit
-promptinit
-prompt fade cyan black magenta
-
-# Utilities
-alias matlab='/Applications/MATLAB_R2017a.app/bin/matlab -nodesktop'
-alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
-
-#--------------------Variables
-devfair='-J fairjmp.thefacebook.com devfair159'
-#--------------------
-
-# Path to your oh-my-zsh installation.
-#export ZSH=/Users/austinspwang/.oh-my-zsh
+# ~/.zshrc: executed by zsh(1) for non-login shells.
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="agnoster"
+ZSH_THEME=""
 
+# Zsh to use the same colors as ls
+#zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}  
+
+#-------------Aliases
+source ~/.dotfiles/.bash_aliases
+
+#-------------Colors & Themes
+autoload -Uz promptinit
+promptinit
+prompt fade green white black
+
+# xterm: set a fancy prompt (non-color, unless we know we "want" color)
+case "$TERM" in
+    xterm-color|*-256color) color_prompt=yes;;
+esac
+
+#--------------------Zsh settings
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
@@ -74,7 +45,7 @@ ZSH_THEME="agnoster"
 # ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
-# COMPLETION_WAITING_DOTS="true"
+COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
@@ -116,15 +87,3 @@ ZSH_THEME="agnoster"
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
-
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-#
-#--------------------Inital Commands
-
