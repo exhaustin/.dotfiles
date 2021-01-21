@@ -1,4 +1,4 @@
-#ls
+# ls
 if [[ $(uname -s) == Linux ]]
 then
     alias ls='LC_COLLATE=C ls -h --group-directories-first --color=auto'
@@ -9,6 +9,9 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
+
+# Sudo with aliases
+alias sudo='sudo '
 
 # Vim
 alias vu='vim -S ~/.dotfiles/.vimrc'
