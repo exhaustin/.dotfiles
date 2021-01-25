@@ -15,6 +15,7 @@ alias sudo='sudo '
 
 # Vim
 alias vu='vim -S ~/.dotfiles/.vimrc'
+alias vudiff='vimdiff -S ~/.dotfiles/.vimrc'
 
 # Tmux
 alias tmux='tmux -2'
