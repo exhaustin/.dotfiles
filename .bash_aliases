@@ -14,8 +14,8 @@ alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
 alias sudo='sudo '
 
 # Vim
-alias vu='vim -S ~/.dotfiles/.vimrc'
-alias vudiff='vimdiff -S ~/.dotfiles/.vimrc'
+alias vu='vim -S ~/.dotfiles/.vurc'
+alias vudiff='vimdiff -S ~/.dotfiles/.vurc'
 
 # Tmux
 alias tmux='tmux -2'
