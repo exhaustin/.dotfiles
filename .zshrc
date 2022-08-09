@@ -21,6 +21,10 @@ case "$TERM" in
     xterm-color|*-256color) color_prompt=yes;;
 esac
 
+#--------------------Zsh plugins
+fpath+="~/.dotfiles/zsh-plugins"
+compinit conda
+
 #--------------------Zsh settings
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
