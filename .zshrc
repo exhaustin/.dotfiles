@@ -14,7 +14,7 @@ source ~/.dotfiles/.bash_aliases
 #-------------Colors & Themes
 autoload -Uz promptinit
 promptinit
-prompt fade 37 grey black
+prompt fade $ZSH_PROMPT_COLOR grey black
 
 # xterm: set a fancy prompt (non-color, unless we know we "want" color)
 case "$TERM" in
