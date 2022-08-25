@@ -35,3 +35,6 @@ alias activate='source venv/bin/activate'
 
 # Matlab
 alias matlab='/Applications/MATLAB_R2017a.app/bin/matlab -nodesktop'
+
+# Multipass
+alias mp='multipass'
