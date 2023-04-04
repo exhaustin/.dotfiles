@@ -10,6 +10,9 @@ alias la='ls -A'
 alias l='ls -CF'
 alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
 
+# Git
+alias gitbranchclean="git branch -vv | grep ': gone]' | grep -v '\*' | awk '{ print $1; }' | xargs -r git branch -D"
+
 # Sudo with aliases
 alias sudo='sudo '
 
@@ -35,6 +38,3 @@ alias activate='source venv/bin/activate'
 
 # Matlab
 alias matlab='/Applications/MATLAB_R2017a.app/bin/matlab -nodesktop'
-
-# Multipass
-alias mp='multipass'
