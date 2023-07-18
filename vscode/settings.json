@@ -1,6 +1,9 @@
 {
     "editor.renderWhitespace": "all",
     "explorer.autoReveal": false,
+    "vim.handleKeys": {
+        "<C-d>": false
+    },
     "vim.normalModeKeyBindingsNonRecursive": [
         {
         "before": ["i"],
