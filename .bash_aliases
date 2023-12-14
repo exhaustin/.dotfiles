@@ -11,7 +11,8 @@ alias l='ls -CF'
 alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
 
 # Git
-alias gitbranchclean="git branch -vv | grep ': gone]' | grep -v '\*' | awk '{ print $1; }' | xargs -r git branch -D"
+alias gittree="git log --all --oneline --graph --decorate"
+alias gitclean="git branch -vv | grep ': gone]' | grep -v '\*' | awk '{ print $1; }' | xargs -r git branch -D"
 
 # Sudo with aliases
 alias sudo='sudo '
