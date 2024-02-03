@@ -37,7 +37,7 @@ local current_datetime="%{$FG[239]%}[%*]%{$reset_color%}"
 local git_branch='$(git_prompt_info)'
 
 PROMPT="╭─${user_host}%F{white}:${current_dir} ${git_branch} ${current_datetime}
-╰─\$(virtualenv_info)$PR_PROMPT "
+╰─\$(virtualenv_info)─$PR_PROMPT "
 RPROMPT="${return_code}"
 
 ZSH_THEME_GIT_PROMPT_PREFIX="%F{yellow}<"
