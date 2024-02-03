@@ -7,6 +7,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="gnzh"
+export VIRTUAL_ENV_DISABLE_PROMPT=1  # disable virtualenv prompt because we generate our own in our theme
 
 # Zsh to use the same colors as ls
 #zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}  
