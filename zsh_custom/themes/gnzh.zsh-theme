@@ -25,8 +25,8 @@ else
 fi
 
 function virtualenv_info {
-    [ $CONDA_DEFAULT_ENV ] && echo "($CONDA_DEFAULT_ENV) "
-    [ $VIRTUAL_ENV ] && echo '('`basename $VIRTUAL_ENV`') '
+    [ $CONDA_DEFAULT_ENV ] && echo "($CONDA_DEFAULT_ENV)"
+    [ $VIRTUAL_ENV ] && echo '('`basename $VIRTUAL_ENV`')'
 }
 
 local return_code="%(?..%F{red}%? ↵%f)"
