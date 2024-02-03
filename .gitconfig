@@ -1,0 +1,8 @@
+[web]
+    browser = google-chrome
+
+[init]
+    defaultBranch = main
+
+[help]
+    autocorrect = 5
