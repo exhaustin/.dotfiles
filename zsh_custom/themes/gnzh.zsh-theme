@@ -33,10 +33,10 @@ local return_code="%(?..%F{red}%? ↵%f)"
 
 local user_host="${PR_USER}%F{cyan}@${PR_HOST}"
 local current_dir="%B%F{blue}%~%f%b"
-local current_datetime="%{$FG[239]%}[%D - %*]%{$reset_color%}"
+local current_datetime="%{$FG[239]%}[%*]%{$reset_color%}"
 local git_branch='$(git_prompt_info)'
 
-PROMPT="╭─${user_host} ${current_dir} ${git_branch} ${current_datetime}
+PROMPT="╭─${user_host}%F{white}:${current_dir} ${git_branch} ${current_datetime}
 ╰─\$(virtualenv_info)$PR_PROMPT "
 RPROMPT="${return_code}"
 
