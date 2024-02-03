@@ -41,9 +41,9 @@ PROMPT="╭─${user_host} ${current_dir} ${git_branch} ${current_datetime}
 RPROMPT="${return_code}"
 
 ZSH_THEME_GIT_PROMPT_PREFIX="%F{yellow}<"
-ZSH_THEME_GIT_PROMPT_SUFFIX="%F{yellow}>%f"
-ZSH_THEME_GIT_PROMPT_DIRTY=" %{$FG[202]%}✘"
-ZSH_THEME_GIT_PROMPT_CLEAN=" %{$FG[040]%}✔"
+ZSH_THEME_GIT_PROMPT_SUFFIX=">%f"
+#ZSH_THEME_GIT_PROMPT_DIRTY="%{$FG[202]%}"
+#ZSH_THEME_GIT_PROMPT_CLEAN="%{$FG[040]%}"
 ZSH_THEME_RUBY_PROMPT_PREFIX="%F{red}‹"
 ZSH_THEME_RUBY_PROMPT_SUFFIX="›%f"
 
