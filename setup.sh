@@ -1,4 +1,5 @@
 # Install cmd line tools
+sudo apt update
 sudo apt install curl vim tmux htop zsh fonts-powerline
 
 # Setup zsh
