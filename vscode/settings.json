@@ -63,6 +63,7 @@
             "before": ["<C-i>"],
             "commands": ["interactiveEditor.start"]
         }
-    ]
+    ],
+    "workbench.editor.tabSizing": "fit"
 }
 
