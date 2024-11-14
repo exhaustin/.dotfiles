@@ -6,54 +6,62 @@
     },
     "vim.normalModeKeyBindingsNonRecursive": [
         {
-        "before": ["i"],
-        "after": ["<Up>"]
+            "before": ["i"],
+            "after": ["<Up>"]
         },
         {
-        "before": ["k"],
-        "after": ["<Down>"]
+            "before": ["k"],
+            "after": ["<Down>"]
         },
         {
-        "before": ["j"],
-        "after": ["<Left>"]
+            "before": ["j"],
+            "after": ["<Left>"]
         },
         {
-        "before": ["l"],
-        "after": ["<Right>"]
+            "before": ["l"],
+            "after": ["<Right>"]
         },
         {
-        "before": ["h"],
-        "after": ["i"]
+            "before": ["h"],
+            "after": ["i"]
         },
         {
-        "before": ["H"],
-        "after": ["I"]
+            "before": ["H"],
+            "after": ["I"]
+        },
+		{
+            "before": ["<C-i>"],
+            "commands": ["interactiveEditor.start"]
         }
     ],
     "vim.visualModeKeyBindingsNonRecursive": [
         {
-        "before": ["i"],
-        "after": ["<Up>"]
+            "before": ["i"],
+            "after": ["<Up>"]
         },
         {
-        "before": ["k"],
-        "after": ["<Down>"]
+            "before": ["k"],
+            "after": ["<Down>"]
         },
         {
-        "before": ["j"],
-        "after": ["<Left>"]
+            "before": ["j"],
+            "after": ["<Left>"]
         },
         {
-        "before": ["l"],
-        "after": ["<Right>"]
+            "before": ["l"],
+            "after": ["<Right>"]
         },
         {
-        "before": ["h"],
-        "after": ["i"]
+            "before": ["h"],
+            "after": ["i"]
         },
         {
-        "before": ["H"],
-        "after": ["I"]
+            "before": ["H"],
+            "after": ["I"]
+        },
+		{
+            "before": ["<C-i>"],
+            "commands": ["interactiveEditor.start"]
         }
     ]
 }
