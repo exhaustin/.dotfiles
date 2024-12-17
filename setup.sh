@@ -2,6 +2,9 @@
 sudo apt update
 sudo apt install curl vim tmux htop zsh fonts-powerline
 
+# Setup zed
+curl -f https://zed.dev/install.sh | sh
+
 # Setup zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
