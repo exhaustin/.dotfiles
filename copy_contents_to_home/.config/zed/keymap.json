@@ -30,7 +30,8 @@
       "ctrl-d": "vim::SelectNext",
       "ctrl-c": "editor::Cancel",
       "ctrl-shift-c": "editor::Copy",
-      "ctrl-shift-v": "editor::Paste"
+      "ctrl-shift-v": "editor::Paste",
+      "ctrl-i": "assistant::InlineAssist"
     }
   },
   {
