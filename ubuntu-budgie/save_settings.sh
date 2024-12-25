@@ -7,3 +7,5 @@ cp -r ~/.config/budgie-desktop $target_config_path
 cp -r ~/.config/budgie-extras $target_config_path
 cp -r ~/.config/plank $target_config_path
 cp -r ~/.config/ibus $target_config_path
+
+echo "System settings saved to $target_config_path."
