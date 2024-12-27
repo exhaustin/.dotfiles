@@ -15,6 +15,9 @@
     "light": "One Dark",
     "dark": "One Dark"
   },
-  "format_on_save": "off"
+  "format_on_save": "off",
+  "project_panel": {
+    "auto_reveal_entries": false
+  }
 }
 
