@@ -87,6 +87,13 @@ source $ZSH/oh-my-zsh.sh
 # ssh
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
 
+# Tick prompt clock every second
+setopt PROMPT_SUBST
+TMOUT=1
+TRAPALRM() {
+    zle reset-prompt
+}
+
 # Prevents slow autocompletions
 unsetopt pathdirs
 
