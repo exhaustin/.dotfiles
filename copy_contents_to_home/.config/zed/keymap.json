@@ -31,7 +31,8 @@
       "ctrl-c": "editor::Cancel",
       "ctrl-shift-c": "editor::Copy",
       "ctrl-shift-v": "editor::Paste",
-      "ctrl-i": "assistant::InlineAssist"
+      "ctrl-i": "assistant::InlineAssist",
+      "ctrl-a": "zed::NoAction"
     }
   },
   {
