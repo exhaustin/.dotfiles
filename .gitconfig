@@ -6,3 +6,15 @@
 
 [help]
     autocorrect = 5
+
+[alias]
+    pl = pull
+    ps = push
+    ch = checkout
+    st = status
+    ad = add
+    cm = commit
+    fe = fetch
+    lo = log
+    di = diff
+    
