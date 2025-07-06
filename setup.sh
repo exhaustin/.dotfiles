@@ -1,9 +1,6 @@
 # Install cmd line tools
 sudo apt update
-sudo apt install curl vim tmux htop zsh fonts-powerline
-
-# Setup zed
-curl -f https://zed.dev/install.sh | sh
+sudo apt install -y curl vim tmux htop zsh fonts-powerline
 
 # Setup zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"

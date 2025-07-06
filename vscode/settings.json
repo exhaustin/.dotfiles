@@ -32,6 +32,10 @@
 		{
             "before": ["<C-i>"],
             "commands": ["interactiveEditor.start"]
+        },
+		{
+            "before": ["<C-a>"],
+            "commands": ["editor.noop"]
         }
     ],
     "vim.visualModeKeyBindingsNonRecursive": [
@@ -62,6 +66,10 @@
 		{
             "before": ["<C-i>"],
             "commands": ["interactiveEditor.start"]
+        },
+		{
+            "before": ["<C-a>"],
+            "commands": ["editor.noop"]
         }
     ],
     "workbench.editor.tabSizing": "fit"
