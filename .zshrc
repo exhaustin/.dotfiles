@@ -96,4 +96,5 @@ TRAPALRM() {
 
 # Prevents slow autocompletions
 unsetopt pathdirs
+unsetopt PATH_DIRS
 
