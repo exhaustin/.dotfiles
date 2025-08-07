@@ -33,7 +33,7 @@ local return_code="%(?..%F{red}%? ↵%f)"
 
 local user_host="%B${PR_USER}%F{cyan}@${PR_HOST}%b"
 local current_dir="%B%F{blue}%~%f%b"
-local current_datetime="%{$FG[239]%}[%*]%{$reset_color%}"
+local current_datetime="%{$FG[239]%}[%D{%Y-%m-%d %H:%M}]%{$reset_color%}"
 local git_branch='$(git_prompt_info)'
 
 PROMPT="╭─${user_host}%F{white}:${current_dir} ${git_branch} ${current_datetime}
