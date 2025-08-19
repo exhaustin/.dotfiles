@@ -13,3 +13,6 @@ ln -s ~/.dotfiles/zsh_custom/themes/gnzh.zsh-theme ${ZSH_CUSTOM:-~/.oh-my-zsh/cu
 
 # Copy configs
 cp -r ~/.dotfiles/copy_contents_to_home/. ~
+
+# Git config
+git config --global push.autoSetupRemote true
