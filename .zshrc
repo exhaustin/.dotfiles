@@ -89,7 +89,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Tick prompt clock every second
 setopt PROMPT_SUBST
-TMOUT=1
+TMOUT=60
 TRAPALRM() {
     zle reset-prompt
 }
