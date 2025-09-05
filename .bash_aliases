@@ -11,6 +11,8 @@ alias l='ls -CF'
 alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
 
 # Git
+alias g="git"
+
 alias ga="git add"
 alias gs="git status"
 alias gc="git commit"
@@ -20,6 +22,9 @@ alias gl="git log"
 alias gph="git push"
 alias gpl="git pull"
 alias gck="git checkout"
+
+alias gfo="git fetch origin"
+alias gplo="git pull origin"
 
 alias gittree="git log --all --oneline --graph --decorate"
 alias gitclean="git branch -vv | grep ': gone]' | grep -v '\*' | awk '{ print $1; }' | xargs -r git branch -D"
