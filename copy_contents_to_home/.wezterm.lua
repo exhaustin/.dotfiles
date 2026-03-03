@@ -12,7 +12,7 @@ config.initial_rows = 28
 
 -- or, changing the font size and color scheme.
 config.font_size = 12
-config.color_scheme = 'Tokyo Night Moon'
+config.color_scheme = 'Smyck (Gogh)'
 -- When the config for a window is reloaded (i.e. when you save this file
 -- or open a new window)...
 
