@@ -1,6 +1,6 @@
 # Install cmd line tools
 sudo apt update
-sudo apt install -y curl vim tmux htop zsh fonts-powerline
+sudo apt install -y curl vim tmux htop zsh fonts-powerline neovim
 
 # Setup zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -13,6 +13,11 @@ ln -s ~/.dotfiles/zsh_custom/themes/gnzh.zsh-theme ${ZSH_CUSTOM:-~/.oh-my-zsh/cu
 
 # Copy configs
 cp -r ~/.dotfiles/copy_contents_to_home/. ~
+
+# Symlink configs
+mkdir -p ~/.config
+ln -s ~/.dotfiles/nvim ~/.config/nvim
+ln -s ~/.dotfiles/zed ~/.config/zed
 
 # Git config
 git config --global push.autoSetupRemote true
