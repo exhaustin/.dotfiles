@@ -18,12 +18,12 @@ pcall(vim.keymap.del, "t", "<C-h>") -- may not exist in all setups
 vim.keymap.del({ "n", "i", "v" }, "<A-j>") -- replaced by <A-k>
 
 -- Core movement (normal + visual) with smart display-line wrapping
-vim.keymap.set({ "n", "x" }, "i", "v:count == 0 ? 'gk' : 'k'", { desc = "Up", expr = true, silent = true })
+vim.keymap.set({ "n", "x" }, "i", "v:count == 0 ? 'gk' : 'k'", { desc = "Up", expr = true, silent = true, nowait = true })
 vim.keymap.set({ "n", "x" }, "k", "v:count == 0 ? 'gj' : 'j'", { desc = "Down", expr = true, silent = true })
 vim.keymap.set({ "n", "x" }, "j", "h", { desc = "Left" })
 
 -- Operator-pending movement (no smart wrapping needed)
-vim.keymap.set("o", "i", "k", { desc = "Up" })
+vim.keymap.set("o", "i", "k", { desc = "Up", nowait = true })
 vim.keymap.set("o", "k", "j", { desc = "Down" })
 vim.keymap.set("o", "j", "h", { desc = "Left" })
 
@@ -58,6 +58,9 @@ vim.keymap.set("i", "<A-i>", "<esc><cmd>m .-2<cr>==gi", { desc = "Move Up" })
 vim.keymap.set("i", "<A-k>", "<esc><cmd>m .+1<cr>==gi", { desc = "Move Down" })
 vim.keymap.set("v", "<A-i>", ":<C-u>execute \"'<,'>move '<-\" . (v:count1 + 1)<cr>gv=gv", { desc = "Move Up" })
 vim.keymap.set("v", "<A-k>", ":<C-u>execute \"'<,'>move '>+\" . v:count1<cr>gv=gv", { desc = "Move Down" })
+
+-- Restore default s in visual mode (flash.nvim overrides it)
+vim.keymap.set("x", "s", "s")
 
 -- Split window vertically and move to new pane
 vim.keymap.set("n", "<leader>v", "<C-w>v<C-w>l")
